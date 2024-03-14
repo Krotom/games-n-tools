@@ -1,7 +1,18 @@
 import init
 import menuGames
 import menuTools
+import optparse
 from os import system as sys
+
+parse = optparse.OptionParser()
+parse.add_option("-d", action="store_true", dest="dev_mode", default=False)
+opts = parse.parse_args()[0]
+dev = opts.dev_mode
+
+
+def check_dev(devm):
+    if devm:
+        print("Welcome back developer!")
 
 
 menu = """
@@ -21,6 +32,7 @@ toolsIndev = 0
 
 while True:
     sys(init.ph())
+    check_dev(dev)
     print(menu)
     c = input("Choice: ")
     if c == "1":

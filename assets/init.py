@@ -1,3 +1,4 @@
+import os
 from time import sleep
 from os import system as sys
 
@@ -12,7 +13,7 @@ def init(available):
     print("Checking program availability...")
     sleep(1)
     if available:
-        print("Checking modules...")
+        print("Checking modules... Current dir: ", os.getcwd())
         try:
             import matplotlib
             import numpy
@@ -21,6 +22,7 @@ def init(available):
             import sklearn
             import seaborn
             import scapy
+            import optparse
 
         except ModuleNotFoundError:
             print("Installing modules, this will happen once...")

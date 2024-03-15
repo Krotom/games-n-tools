@@ -49,7 +49,20 @@ If you enter 30, %70 of the dataset will be used to train the AI and the left %3
 6 - Enter random state.
 Just enter a number between 1 and 10000.
 
-7 - Let the code do its work!"""
+7 - Let the code do its work!
+
+---- Example Use ----
+
+1 - Dataset Name: ed(short version of emmision dataset)
+2 - Number of columns: 4
+3 - 1. Column name: country_or_area
+    2. Column name: year
+    3. Column name: category
+    4. Column name: value
+4 - AI Model: 1(DecisionTreeClassifier)
+5 - Test percentage: 50
+6 - 19
+7 - Done!"""
 mainm = """
 -------Main Menu-------
 
@@ -81,7 +94,7 @@ def maincode():
     try:
         dataset = input("Enter dataset name: ")
         try:
-            pd.read_csv(dataset + ".csv", encoding='unicode_escape')
+            pd.read_csv("assets/", dataset + ".csv", encoding='unicode_escape')
         except FileNotFoundError:
             print("Sorry this file does not exist! Please make sure your .csv file is in the assets folder!")
             anim("Directing you back, make sure to read the error...", 20)
@@ -176,6 +189,7 @@ def main():
             if hl:
                 maincode()
             else:
+                sys("cls")
                 print("Please open the 'How To Use' menu at least once before running")
         elif c == "?":
             sys("cls")

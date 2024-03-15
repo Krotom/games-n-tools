@@ -7,7 +7,7 @@ toolBrakeCalcIndev = 0
 toolPasswordGenIndev = 0
 toolNoteSysIndev = 0
 toolAIIndev = 0
-toolnetScannerIndev = 0
+toolnetScannerIndev = 1
 toolRefIndexCalcIndev = 0
 
 

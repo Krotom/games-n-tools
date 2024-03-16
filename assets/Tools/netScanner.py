@@ -12,15 +12,20 @@ def ph():
 
 def get_user_input():
     user_input = input("Enter IP: ")
-    return user_input
+    cf = input("Verbose? Y/n: ")
+    if cf.lower() == "n":
+        verbo = False
+    else:
+        verbo = True
+    return user_input, verbo
 
 
-def scan_my_network(ip):
+def scan_my_network(ip, verbose):
     while True:
         try:
             arp_request_packet = scapy.ARP(pdst=ip)
             combined_packet = scapy.Ether(dst="ff:ff:ff:ff:ff:ff") / arp_request_packet
-            answered_list = scapy.srp(combined_packet, timeout=1, verbose=False)[0]
+            answered_list = scapy.srp(combined_packet, timeout=1, verbose=verbose)[0]
             print(answered_list.summary())
         except Exception as f:
             print(f"""Something went wrong :(
@@ -42,8 +47,8 @@ def main():
         Q - Quit""")
         c = input("Choice: ")
         if c.lower() == "r":
-            user_ip_address = get_user_input()
-            scan_my_network(user_ip_address)
+            user_ip_address, verb = get_user_input()
+            scan_my_network(user_ip_address, verb)
         elif c.lower() == "q":
             break
         else:

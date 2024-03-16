@@ -26,9 +26,11 @@ menu = """Select the game you want to play:
             """
 
 
-def mainloop():
+def mainloop(devm):
     while True:
         os.system("cls")
+        if devm:
+            print("Welcome back developer!")
         print(menu)
         c = input("Select 1/2/3/4/5/6/q: ")
         if c == "1":

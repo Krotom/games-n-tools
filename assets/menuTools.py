@@ -27,9 +27,11 @@ menu = """Select the tool you want to use
 q- Quit"""
 
 
-def mainloop():
+def mainloop(devm):
     while True:
         os.system("cls")
+        if devm:
+            print("Welcome back developer!")
         print(menu)
         c = input("Select 1/2/3/4/5/6/7/q: ")
         if c == "1":

@@ -11,8 +11,15 @@ dev = opts.dev_mode
 
 
 def check_dev(devm):
+    devpass = "DeveloperPassForMe1235789"
     if devm:
-        print("Welcome back developer!")
+        cc = input("Enter dev password: ")
+        if cc == devpass:
+            print("Welcome back developer!")
+        else:
+            print("Wrong password!")
+            input("Press enter to continue")
+            quit()
 
 
 menu = """

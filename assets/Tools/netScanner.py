@@ -21,20 +21,20 @@ def get_user_input():
 
 
 def scan_my_network(ip, verbose):
-    while True:
-        try:
-            arp_request_packet = scapy.ARP(pdst=ip)
-            combined_packet = scapy.Ether(dst="ff:ff:ff:ff:ff:ff") / arp_request_packet
-            answered_list = scapy.srp(combined_packet, timeout=1, verbose=verbose)[0]
-            print(answered_list.summary())
-        except Exception as f:
-            print(f"""Something went wrong :(
-            Please Try Again!
-            Error Code: {f}""")
-            return
-        except KeyboardInterrupt:
-            print("Ctrl+C detected quitting")
-            break
+    try:
+        arp_request_packet = scapy.ARP(pdst=ip)
+        combined_packet = scapy.Ether(dst="ff:ff:ff:ff:ff:ff") / arp_request_packet
+        answered_list = scapy.srp(combined_packet, timeout=1, verbose=verbose)[0]
+        print(answered_list.summary())
+        print("Emmission finished, send again?")
+        v = input("+/-:")
+        if v == "+":
+            scan_my_network(ip, verbose)
+    except Exception as f:
+        print(f"""Something went wrong :(
+        Please Try Again!
+        Error Code: {f}""")
+        return
 
 
 def main():
@@ -47,6 +47,8 @@ def main():
         Q - Quit""")
         c = input("Choice: ")
         if c.lower() == "r":
+            print("Currently scannable addresses:")
+            s("arp -a")
             user_ip_address, verb = get_user_input()
             scan_my_network(user_ip_address, verb)
         elif c.lower() == "q":

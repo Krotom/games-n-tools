@@ -7,7 +7,7 @@ toolBrakeCalcIndev = 0
 toolPasswordGenIndev = 0
 toolNoteSysIndev = 0
 toolAIIndev = 0
-toolnetScannerIndev = 1
+toolnetScannerIndev = 0
 toolRefIndexCalcIndev = 0
 
 
@@ -28,8 +28,8 @@ q- Quit"""
 
 
 def mainloop(devm):
+    os.system("cls")
     while True:
-        os.system("cls")
         if devm:
             print("Welcome back developer!")
         print(menu)
@@ -81,7 +81,10 @@ def mainloop(devm):
                 print(refIndexCalc.ph())
                 input("Press enter to continue")
                 sys("cls")
+            else:
+                refIndexCalc.main()
         elif c.lower() == "q":
             break
         else:
+            sys("cls")
             print("Unknown choice. Please retry!")

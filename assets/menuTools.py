@@ -88,3 +88,4 @@ def mainloop(devm):
         else:
             sys("cls")
             print("Unknown choice. Please retry!")
+        sys("cls")

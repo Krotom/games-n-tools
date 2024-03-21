@@ -31,6 +31,8 @@ def mainloop(devm):
         os.system("cls")
         if devm:
             print("Welcome back developer!")
+        else:
+            print("Welcome back!")
         print(menu)
         c = input("Select 1/2/3/4/5/6/q: ")
         if c == "1":

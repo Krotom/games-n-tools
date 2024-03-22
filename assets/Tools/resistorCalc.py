@@ -2,7 +2,7 @@ def placeholder():
     return "Sorry, this tool is currently indev!"
 
 
-def resistor_color_code_calculator():
+def main():
     color_codes = {
         "black": 0,
         "brown": 1,
@@ -15,6 +15,17 @@ def resistor_color_code_calculator():
         "gray": 8,
         "white": 9
     }
+    print("""Available band colours: 
+    Black
+    Brown
+    Red
+    Orange
+    Yellow
+    Green
+    Blue
+    Violet
+    Gray
+    White""")
     band1 = input("Enter the color of the first band: ").lower()
     band2 = input("Enter the color of the second band: ").lower()
     band3 = input("Enter the color of the third band: ").lower()

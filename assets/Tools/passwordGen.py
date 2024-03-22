@@ -35,7 +35,5 @@ def main():
 
         print("Rerun?")
         c = input("+/-:")
-        if c == "+":
-            main()
-        else:
+        if c == "-":
             break

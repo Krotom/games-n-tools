@@ -42,7 +42,7 @@ def mainloop(devm):
                 input("Press enter to continue")
                 sys("cls")
             else:
-                resistorCalc.resistor_color_code_calculator()
+                resistorCalc.main()
         elif c == "2":
             if toolBrakeCalcIndev:
                 print(brakeCalc.placeholder())

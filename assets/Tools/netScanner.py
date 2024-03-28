@@ -11,12 +11,11 @@ def ph():
 
 
 def get_user_input():
+    verbo = True
     user_input = input("Enter IP: ")
     cf = input("Verbose? Y/n: ")
     if cf.lower() == "n":
         verbo = False
-    else:
-        verbo = True
     return user_input, verbo
 
 

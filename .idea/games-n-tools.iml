@@ -6,6 +6,7 @@
       <sourceFolder url="file://$MODULE_DIR$/assets/Python/DLLs" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/assets/Python/Lib" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/assets/Python/Lib/site-packages" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/.idea" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

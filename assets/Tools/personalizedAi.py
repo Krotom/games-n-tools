@@ -94,7 +94,7 @@ def maincode():
     try:
         dataset = input("Enter dataset name: ")
         try:
-            pd.read_csv("assets/" + dataset + ".csv", encoding='unicode_escape')
+            pd.read_csv("assets\\" + dataset + ".csv", encoding='unicode_escape')
         except FileNotFoundError:
             print("Sorry this file does not exist! Please make sure your .csv file is in the assets folder!")
             anim("Directing you back, make sure to read the error...", 20)

@@ -1,3 +1,4 @@
+import matplotlib
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
@@ -10,6 +11,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.naive_bayes import CategoricalNB
 from os import system as sys
 from time import sleep as sl
+plt.switch_backend("WebAgg")
 
 
 def anim(text, t):
@@ -17,14 +19,14 @@ def anim(text, t):
     while o < t:
         print("\r" + text + "-", end="")
         sl(0.07)
-        print("\r" + text + "/", end="")
+        print("\r" + text + "\\", end="")
         sl(0.07)
         print("\r" + text + "|", end="")
         sl(0.07)
-        print("\r" + text + "\\", end="")
+        print("\r" + text + "/", end="")
         sl(0.07)
         o += 1
-    print("\r" + text)
+    print("\r" + text + "OK")
 
 
 enc = LabelEncoder()
@@ -99,7 +101,7 @@ def maincode():
             print("Sorry this file does not exist! Please make sure your .csv file is in the assets folder!")
             anim("Directing you back, make sure to read the error...", 20)
 
-        data = pd.read_csv(dataset + ".csv", encoding='unicode_escape')
+        data = pd.read_csv("assets\\" + dataset + ".csv", encoding='unicode_escape')
         dt = data.copy()
         colnum = int(input("Enter number of columns in the dataset: "))
         for i in range(colnum):

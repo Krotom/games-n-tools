@@ -37,7 +37,7 @@ helpm = """
 The dataset needs to be in the assets directory and must be '.csv' file.
 
 2 - Enter the number of columns in your csv file.
-If you enter this wrong, the programs' gonna crash.
+If you enter this wrong, the program is gonna crash.
 
 3 - Enter name of the given column in the csv file.
 Don't Forget: It must be the exact same with the csv file! This is important!
@@ -55,7 +55,7 @@ Just enter a number between 1 and 10000.
 
 ---- Example Use ----
 
-1 - Dataset Name: ed(short version of emmision dataset)
+1 - Dataset Name: ed(included in assets)
 2 - Number of columns: 4
 3 - 1. Column name: country_or_area
     2. Column name: year
@@ -63,7 +63,7 @@ Just enter a number between 1 and 10000.
     4. Column name: value
 4 - AI Model: 1(DecisionTreeClassifier)
 5 - Test percentage: 50
-6 - 19
+6 - Random state: 19
 7 - Done!"""
 mainm = """
 -------Main Menu-------

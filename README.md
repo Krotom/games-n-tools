@@ -14,3 +14,7 @@ So you don't need to install python on your computer, just clone or install the 
 # How To Run ?
 
 Just run the Games n' Tools.bat file and my code will do the rest!
+
+# IMPORTANT !
+
+The script runs directly in the games-n-tools directory, if you try to run main.lua in assets folder by yourself, you're gonna mess up(not if you're a programmer like me!)

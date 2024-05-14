@@ -17,4 +17,4 @@ Just run the Games n' Tools.bat file and my code will do the rest!
 
 # IMPORTANT !
 
-The script runs directly in the games-n-tools directory, if you try to run main.lua in assets folder by yourself, you're gonna mess up(not if you're a programmer like me!)
+The script runs directly in the games-n-tools directory, if you try to run main.py in assets folder by yourself, you're gonna mess up(not if you're a programmer like me!)

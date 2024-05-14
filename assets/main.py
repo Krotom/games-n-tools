@@ -36,6 +36,7 @@ q-Quit
 """
 gamesIndev = 0
 toolsIndev = 0
+term_count = 0
 
 
 while True:

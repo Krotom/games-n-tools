@@ -11,8 +11,8 @@ You can either download the zip or clone with Git. If you downloaded the zip, un
 
 # No Python Required !
 
-The respository has its own python inside it(and its very unstable so better not touch the code if you don't know what you are doing)
-So you don't need to install python on your computer, just clone or install the respository and you're ready
+The repository has its own python inside it(and its very unstable so better not touch the code if you don't know what you are doing)
+So you don't need to install python on your computer, just clone or install the repository and you're ready
 
 # How To Run ?
 

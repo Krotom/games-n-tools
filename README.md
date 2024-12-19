@@ -1,5 +1,5 @@
-##!!!WARNING!!!
-##DISCONTINUED
+#!!!WARNING!!!
+#DISCONTINUED
 
 # Games n' Tools
 

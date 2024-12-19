@@ -7,7 +7,7 @@ This is Games n' Tools, it includes nearly 10 games and tools(nearly 20 in total
 
 # How To Install ?
 
-You can either download the zip or clon with Git. If you downloaded the zip, unzip it. And you're done! Get a look at "How To Run ?" to see... You know... How to run!
+You can either download the zip or clone with Git. If you downloaded the zip, unzip it. And you're done! Get a look at "How To Run ?" to see... You know... How to run!
 
 # No Python Required !
 

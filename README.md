@@ -1,3 +1,6 @@
+##!!!WARNING!!!
+##DISCONTINUED
+
 # Games n' Tools
 
 This is Games n' Tools, it includes nearly 10 games and tools(nearly 20 in total)
